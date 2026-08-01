@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-App SGSSS Colombia</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Micro-App Gestión Integral SGSSS</h1>
+
+    <p>
+        Seguridad Social para trabajadores con múltiples contratos
+    </p>
+
+</header>
+
+<div class="contenedor">
+
+<!-- ============================ -->
+<!-- MODULO 1 -->
+<!-- ============================ -->
+
+<section class="card">
+
+<h2>
+Módulo 1 - Gestión de Contratos
+</h2>
+
+<div id="contenedorContratos">
+
+</div>
+
+<button id="agregarContrato">
+
+➕ Agregar Contrato
+
+</button>
+
+</section>
+
+
+<!-- ============================ -->
+<!-- MODULO 2 -->
+<!-- ============================ -->
+
+<section class="card">
+
+<h2>
+
+Motor de Cálculo Integral
+
+</h2>
+
+<div class="acciones">
+
+<button id="calcular">
+
+Calcular Seguridad Social
+
+</button>
+
+</div>
+
+<table>
+
+<tr>
+
+<td>Ingresos Totales</td>
+
+<td id="ingresosTotales">$0</td>
+
+</tr>
+
+<tr>
+
+<td>IBC Consolidado</td>
+
+<td id="ibcGlobal">$0</td>
+
+</tr>
+
+<tr>
+
+<td>Salud</td>
+
+<td id="salud">$0</td>
+
+</tr>
+
+<tr>
+
+<td>Pensión</td>
+
+<td id="pension">$0</td>
+
+</tr>
+
+<tr>
+
+<td>ARL</td>
+
+<td id="arl">$0</td>
+
+</tr>
+
+<tr>
+
+<td>FSP</td>
+
+<td id="fsp">$0</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Total Aportes</strong></td>
+
+<td id="totalAportes">$0</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Neto Estimado</strong></td>
+
+<td id="neto">$0</td>
+
+</tr>
+
+</table>
+
+</section>
+
+
+<!-- ============================ -->
+<!-- ALERTAS -->
+<!-- ============================ -->
+
+<section class="card">
+
+<h2>
+
+Alertas Inteligentes UGPP
+
+</h2>
+
+<div id="alertas">
+
+No existen alertas.
+
+</div>
+
+</section>
+
+
+<!-- ============================ -->
+<!-- INCAPACIDAD -->
+<!-- ============================ -->
+
+<section class="card">
+
+<h2>
+
+Simulador de Incapacidad
+
+</h2>
+
+<label>
+
+Días de incapacidad
+
+</label>
+
+<input
+
+type="range"
+
+min="1"
+
+max="180"
+
+value="15"
+
+id="dias">
+
+<span id="valorDias">
+
+15
+
+</span>
+
+días
+
+<br><br>
+
+<button id="simular">
+
+Simular
+
+</button>
+
+<br><br>
+
+<table>
+
+<tr>
+
+<td>Pago Empleador</td>
+
+<td id="empleadorPago">$0</td>
+
+</tr>
+
+<tr>
+
+<td>Pago EPS</td>
+
+<td id="epsPago">$0</td>
+
+</tr>
+
+<tr>
+
+<td>Pago AFP</td>
+
+<td id="afpPago">$0</td>
+
+</tr>
+
+<tr>
+
+<td>Ingreso Esperado</td>
+
+<td id="esperado">$0</td>
+
+</tr>
+
+<tr>
+
+<td>Ingreso Reconocido</td>
+
+<td id="reconocido">$0</td>
+
+</tr>
+
+<tr>
+
+<td>Brecha Financiera</td>
+
+<td id="brecha">$0</td>
+
+</tr>
+
+</table>
+
+</section>
+
+
+<!-- ============================ -->
+<!-- GRAFICA -->
+<!-- ============================ -->
+
+<section class="card">
+
+<h2>
+
+Gráfica de Brecha Financiera
+
+</h2>
+
+<canvas id="grafica"></canvas>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
